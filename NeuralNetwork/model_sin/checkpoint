@@ -1,0 +1,5 @@
+model_checkpoint_path: "model_sinx-4000"
+all_model_checkpoint_paths: "model_sinx-1000"
+all_model_checkpoint_paths: "model_sinx-2000"
+all_model_checkpoint_paths: "model_sinx-3000"
+all_model_checkpoint_paths: "model_sinx-4000"
