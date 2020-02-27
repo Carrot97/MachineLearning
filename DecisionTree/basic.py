@@ -44,7 +44,7 @@ def chooseBestFeatureToSplit(dataSet):  # 选择最优的分类特征
             bestFeature = i
     return bestFeature
 
-def majorityCnt(classList):    # 按分类后类别数量排序，比如：最后分类为2男1女，则判定为男
+def majorityCnt(classList):
     classCount = {}
     for vote in classList:
         if vote not in classCount.keys():
@@ -54,7 +54,7 @@ def majorityCnt(classList):    # 按分类后类别数量排序，比如：最�
     return sortedClassCount[0][0]
 
 def createTree(dataSet,labels):
-    classList = [example[-1] for example in dataSet]  # 类别：男或女
+    classList = [example[-1] for example in dataSet]
 
     # 情况1
     if classList.count(classList[0]) == len(classList):
@@ -77,7 +77,7 @@ def createTree(dataSet,labels):
     return myTree
 
 def load_xigua_dataset():
-    xigua_dataset = pd.read_csv('./xigua_shuju2.0.csv')
+    xigua_dataset = pd.read_csv('xigua_2.0_train.csv')
     dataset = xigua_dataset.values[:, 1:].tolist()
     labels = xigua_dataset.keys().tolist()[1:]
     return dataset, labels

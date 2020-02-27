@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97018e3-34d4-4bb8-aa11-3244a920a408" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/RandomForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/TreeofForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/xigua_2.0_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/xigua_2.0_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DimensionalityReduction/c1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnsenbleLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EnsenbleLearning/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EnsenbleLearning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -37,7 +43,7 @@
       <recent name="F:\subject\DecisionTree" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.basic">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DecisionTree" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +57,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DecisionTree" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,27 +120,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="F:\subject\DecisionTree\conf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cut" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DecisionTree" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cut.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,19 +172,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.basic" />
       <item itemvalue="Python.conf (1)" />
       <item itemvalue="Python.conf" />
-      <item itemvalue="Python.cut" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.trian" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.conf" />
         <item itemvalue="Python.conf (1)" />
         <item itemvalue="Python.trian" />
-        <item itemvalue="Python.cut" />
       </list>
     </recent_temporary>
   </component>
@@ -208,30 +214,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="317" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582689762092" />
-    <state width="1362" height="138" key="GridCell.Tab.0.bottom" timestamp="1582689677066">
+    <state width="1362" height="138" key="GridCell.Tab.0.bottom" timestamp="1582787632243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582689677066" />
-    <state width="1362" height="138" key="GridCell.Tab.0.center" timestamp="1582689677066">
+    <state width="1362" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582787632243" />
+    <state width="1362" height="138" key="GridCell.Tab.0.center" timestamp="1582787632243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582689677066" />
-    <state width="1362" height="138" key="GridCell.Tab.0.left" timestamp="1582689677066">
+    <state width="1362" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582787632243" />
+    <state width="1362" height="138" key="GridCell.Tab.0.left" timestamp="1582787632243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582689677066" />
-    <state width="1362" height="138" key="GridCell.Tab.0.right" timestamp="1582689677066">
+    <state width="1362" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582787632243" />
+    <state width="1362" height="138" key="GridCell.Tab.0.right" timestamp="1582787632243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582689677066" />
+    <state width="1362" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582787632243" />
     <state x="553" y="175" key="SettingsEditor" timestamp="1580528520088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="553" y="175" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580528520088" />
-    <state x="805" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1582689755403">
+    <state x="805" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1582791288938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="805" y="438" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582689755403" />
+    <state x="805" y="438" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582791288938" />
     <state x="618" y="271" width="672" height="678" key="search.everywhere.popup" timestamp="1580697068454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
