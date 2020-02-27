@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2aebbbd-aaae-4755-ae64-de916dda829d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adaboost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EnsenbleLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EnsenbleLearning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomForest/RandomForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomForest/TreeofForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomForest/xigua_2.0_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomForest/xigua_2.0_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DecisionTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DecisionTree/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DecisionTree/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DecisionTree/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DimensionalityReduction/c1.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +37,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DecisionTree" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.RandomForest">
     <configuration name="Adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnsenbleLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,8 +65,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="RandomForest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EnsenbleLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RandomForest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomForest/RandomForest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RandomForest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EnsenbleLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RandomForest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomForest/RandomForest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Adaboost" />
+      <item itemvalue="Python.RandomForest" />
+      <item itemvalue="Python.RandomForest (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RandomForest" />
+        <item itemvalue="Python.RandomForest (1)" />
         <item itemvalue="Python.Adaboost" />
       </list>
     </recent_temporary>
@@ -85,58 +138,79 @@
       <option name="project" value="LOCAL" />
       <updated>1582717187693</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;AdaBoost first time&quot;">
+      <created>1582717309165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582717309166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;&quot;" />
+    <MESSAGE value="&quot;AdaBoost first time&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;AdaBoost first time&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1582717186567">
+    <state x="574" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582781560541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582717186567" />
-    <state width="1193" height="189" key="GridCell.Tab.0.bottom" timestamp="1582715546485">
+    <state x="574" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582781560541" />
+    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1582717308357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582715546485" />
-    <state width="1193" height="189" key="GridCell.Tab.0.center" timestamp="1582715546485">
+    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582717308357" />
+    <state x="900" y="282" key="FileChooserDialogImpl" timestamp="1582787621188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582715546485" />
-    <state width="1193" height="189" key="GridCell.Tab.0.left" timestamp="1582715546485">
+    <state x="900" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582787621188" />
+    <state width="1899" height="248" key="GridCell.Tab.0.bottom" timestamp="1582790543348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582715546485" />
-    <state width="1193" height="189" key="GridCell.Tab.0.right" timestamp="1582715546485">
+    <state width="1899" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
+    <state width="1899" height="248" key="GridCell.Tab.0.center" timestamp="1582790543348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582715546485" />
-    <state width="1193" height="311" key="GridCell.Tab.1.bottom" timestamp="1582715383318">
+    <state width="1899" height="248" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
+    <state width="1899" height="248" key="GridCell.Tab.0.left" timestamp="1582790543348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="311" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582715383318" />
-    <state width="1193" height="311" key="GridCell.Tab.1.center" timestamp="1582715383317">
+    <state width="1899" height="248" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
+    <state width="1899" height="248" key="GridCell.Tab.0.right" timestamp="1582790543348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="311" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582715383317" />
-    <state width="1193" height="311" key="GridCell.Tab.1.left" timestamp="1582715383317">
+    <state width="1899" height="248" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
+    <state width="1899" height="346" key="GridCell.Tab.1.bottom" timestamp="1582788745202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="311" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582715383317" />
-    <state width="1193" height="311" key="GridCell.Tab.1.right" timestamp="1582715383317">
+    <state width="1899" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
+    <state width="1899" height="346" key="GridCell.Tab.1.center" timestamp="1582788745202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1193" height="311" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582715383317" />
-    <state x="-95" y="122" key="SettingsEditor" timestamp="1582692954602">
+    <state width="1899" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
+    <state width="1899" height="346" key="GridCell.Tab.1.left" timestamp="1582788745202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-95" y="122" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582692954602" />
+    <state width="1899" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
+    <state width="1899" height="346" key="GridCell.Tab.1.right" timestamp="1582788745202">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
+    <state x="621" y="169" key="SettingsEditor" timestamp="1582781933774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="169" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582781933774" />
     <state width="615" height="480" key="XDebugger.FullValuePopup" timestamp="1582715150494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="615" height="480" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582715150494" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1582780247937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582780247937" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582716902206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
