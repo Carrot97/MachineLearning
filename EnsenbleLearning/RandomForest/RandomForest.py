@@ -49,13 +49,13 @@ def random_forest(dataset, feature_name, T):
 
 def classify(forest, feature_name, test_set):
     """
-    集成学习器分类函数
+    随机森林分类函数
     :param forest: 决策树集合
     :param feature_name: 测试集各属性名称
     :param test_set: 测试集（数据+标签）
     :return: 无
     """
-    ensemble_predict = []  # 初始化集成学习器预测值
+    ensemble_predict = []  # 初始化随机森林预测值
     data_num = len(test_set)
     tree_num = len(forest)
     predict = [[] for i in range(tree_num)]  # 初始化基学习器预测值
