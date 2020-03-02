@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2aebbbd-aaae-4755-ae64-de916dda829d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RandomForest/RandomForest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomForest/TreeofForest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomForest/xigua_2.0_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomForest/xigua_2.0_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DecisionTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DecisionTree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DecisionTree/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DecisionTree/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DimensionalityReduction/c1.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomForest/RandomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomForest/RandomForest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../README.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DecisionTree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RunManager" selected="Python.RandomForest">
@@ -109,8 +105,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Adaboost" />
-      <item itemvalue="Python.RandomForest" />
       <item itemvalue="Python.RandomForest (1)" />
+      <item itemvalue="Python.RandomForest" />
     </list>
     <recent_temporary>
       <list>
@@ -145,60 +141,83 @@
       <option name="project" value="LOCAL" />
       <updated>1582717309166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;RandomForest first time&quot;">
+      <created>1582791193629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582791193629</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;RandomForest first time&quot;">
+      <created>1582791225364</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582791225364</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;delete conf&quot;">
+      <created>1582791269335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582791269335</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;&quot;" />
     <MESSAGE value="&quot;AdaBoost first time&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;AdaBoost first time&quot;" />
+    <MESSAGE value="&quot;RandomForest first time&quot;" />
+    <MESSAGE value="&quot;delete conf&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;delete conf&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582781560541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582781560541" />
-    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1582791192315">
+    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1582791268552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582791192315" />
-    <state x="900" y="282" key="FileChooserDialogImpl" timestamp="1582787621188">
+    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582791268552" />
+    <state x="900" y="282" key="FileChooserDialogImpl" timestamp="1583117266625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="900" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582787621188" />
-    <state width="1899" height="248" key="GridCell.Tab.0.bottom" timestamp="1582790543348">
+    <state x="900" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583117266625" />
+    <state width="1899" height="346" key="GridCell.Tab.0.bottom" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
-    <state width="1899" height="248" key="GridCell.Tab.0.center" timestamp="1582790543348">
+    <state width="1899" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.0.center" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
-    <state width="1899" height="248" key="GridCell.Tab.0.left" timestamp="1582790543348">
+    <state width="1899" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.0.left" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
-    <state width="1899" height="248" key="GridCell.Tab.0.right" timestamp="1582790543348">
+    <state width="1899" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.0.right" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582790543348" />
-    <state width="1899" height="346" key="GridCell.Tab.1.bottom" timestamp="1582788745202">
+    <state width="1899" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.1.bottom" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
-    <state width="1899" height="346" key="GridCell.Tab.1.center" timestamp="1582788745202">
+    <state width="1899" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.1.center" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
-    <state width="1899" height="346" key="GridCell.Tab.1.left" timestamp="1582788745202">
+    <state width="1899" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.1.left" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
-    <state width="1899" height="346" key="GridCell.Tab.1.right" timestamp="1582788745202">
+    <state width="1899" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
+    <state width="1899" height="346" key="GridCell.Tab.1.right" timestamp="1582791275996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582788745202" />
+    <state width="1899" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582791275996" />
     <state x="621" y="169" key="SettingsEditor" timestamp="1582781933774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -207,10 +226,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="615" height="480" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582715150494" />
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1582780247937">
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1583117204565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582780247937" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583117204565" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582716902206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

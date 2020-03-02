@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97018e3-34d4-4bb8-aa11-3244a920a408" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/RandomForest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/TreeofForest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/xigua_2.0_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnsenbleLearning/RandomForest/xigua_2.0_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DimensionalityReduction/c1.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../EnsenbleLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EnsenbleLearning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../README.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EnsenbleLearning" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -199,7 +194,19 @@
       <option name="presentableId" value="Default" />
       <updated>1580528322809</updated>
     </task>
+    <task id="LOCAL-00001" summary="amendment">
+      <created>1582791408072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582791408072</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="amendment" />
+    <option name="LAST_COMMIT_MESSAGE" value="amendment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580528948580">
@@ -210,10 +217,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="296" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580636673608" />
-    <state x="973" y="317" key="FileChooserDialogImpl" timestamp="1582689762092">
+    <state x="338" y="98" key="CommitChangelistDialog2" timestamp="1582791407043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="973" y="317" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582689762092" />
+    <state x="338" y="98" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582791407043" />
+    <state x="973" y="317" key="FileChooserDialogImpl" timestamp="1582802617392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="973" y="317" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582802617392" />
     <state width="1362" height="138" key="GridCell.Tab.0.bottom" timestamp="1582787632243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="553" y="175" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580528520088" />
-    <state x="805" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1582791288938">
+    <state x="805" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1582802584310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="805" y="438" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582791288938" />
+    <state x="805" y="438" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582802584310" />
     <state x="618" y="271" width="672" height="678" key="search.everywhere.popup" timestamp="1580697068454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
