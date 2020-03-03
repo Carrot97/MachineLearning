@@ -71,7 +71,7 @@ if __name__ == '__main__':
     dataset = normlization(np.array(dataset))
     m = len(dataset)
     labels = DBSCAN(dataset, 0.11, 4)
-    labels = DBSCAN(eps=0.11, min_samples=5).fit_predict(dataset)
+    # labels = DBSCAN(eps=0.11, min_samples=5).fit_predict(dataset)
     class1 = np.array([dataset[i] for i in range(m) if labels[i] == 1])
     class2 = np.array([dataset[i] for i in range(m) if labels[i] == 2])
     plt.title('DBSCAN')
