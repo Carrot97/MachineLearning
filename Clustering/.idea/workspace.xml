@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae8a4738-7d3d-4a36-8fde-ee110fa7d413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scatter_with_label.txt" afterDir="false" />
+    <list default="true" id="ae8a4738-7d3d-4a36-8fde-ee110fa7d413" name="Default Changelist" comment="Add output">
       <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/LinearRegression.iml" afterDir="false" />
@@ -12,8 +11,6 @@
       <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LinearRegression/LogisticRegression.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LinearRegression/scatter_with_label.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBSCAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBSCAN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583207654786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add output">
+      <created>1583211197042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583211197042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,10 +198,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add output" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="640" y="134" key="CommitChangelistDialog2" timestamp="1583211168426">
+    <state x="640" y="134" key="CommitChangelistDialog2" timestamp="1583211195975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="134" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583211168426" />
+    <state x="640" y="134" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583211195975" />
     <state x="820" y="279" key="FileChooserDialogImpl" timestamp="1582534826662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
