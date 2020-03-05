@@ -49,7 +49,8 @@ def gradient_ascent(train_data, train_labels):
 def soft_threshold1(x, t):
     """
     软判决函数1
-
+    :param x: 输入向量
+    :param t: 学习率
     :return: sign(x)*max(|x|-t, 0)
     """
     m = len(x)
