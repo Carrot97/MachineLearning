@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e407f73-7f73-47ae-a2c6-7c9b9ebf6ca7" name="Default Changelist" comment="" />
+    <list default="true" id="2e407f73-7f73-47ae-a2c6-7c9b9ebf6ca7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Semi-supervisedLearning/.idea/Semi-supervisedLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Semi-supervisedLearning/GMMGenerativeMethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Semi-supervisedLearning/GMMGenerativeMethod.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XHRN8hqvxmh1h7h9QIuFAJItDa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -176,13 +183,29 @@
       <option name="presentableId" value="Default" />
       <updated>1580700990144</updated>
     </task>
+    <task id="LOCAL-00001" summary="Amendment">
+      <created>1583805549755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583805549755</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Amendment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amendment" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="735" y="297" key="FileChooserDialogImpl" timestamp="1580711666333">
+    <state x="640" y="124" key="CommitChangelistDialog2" timestamp="1583805548551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="297" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580711666333" />
+    <state x="640" y="124" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583805548551" />
+    <state x="735" y="297" key="FileChooserDialogImpl" timestamp="1583805779415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="297" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583805779415" />
     <state width="1362" height="177" key="GridCell.Tab.0.bottom" timestamp="1581053709266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

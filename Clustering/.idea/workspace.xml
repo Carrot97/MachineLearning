@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8a4738-7d3d-4a36-8fde-ee110fa7d413" name="Default Changelist" comment="Add output">
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/LinearRegression.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/LogisticRegression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinearRegression/scatter_with_label.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SVM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Semi-supervisedLearning/.idea/Semi-supervisedLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SVM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SVM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Semi-supervisedLearning/GMMGenerativeMethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Semi-supervisedLearning/GMMGenerativeMethod.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
       <recent name="F:\subject\Python\Clustering" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DBSCAN">
+  <component name="RunManager" selected="Python.GMM">
     <configuration name="AGNES" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clustering" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DBSCAN" />
         <item itemvalue="Python.GMM" />
+        <item itemvalue="Python.DBSCAN" />
         <item itemvalue="Python.k-means" />
         <item itemvalue="Python.LVQ" />
         <item itemvalue="Python.AGNES" />
@@ -206,38 +202,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="820" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582534826662" />
-    <state width="1362" height="251" key="GridCell.Tab.0.bottom" timestamp="1583211068514">
+    <state width="1362" height="310" key="GridCell.Tab.0.bottom" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583211068514" />
-    <state width="1362" height="251" key="GridCell.Tab.0.center" timestamp="1583211068514">
+    <state width="1362" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.0.center" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="251" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583211068514" />
-    <state width="1362" height="251" key="GridCell.Tab.0.left" timestamp="1583211068514">
+    <state width="1362" height="310" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.0.left" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="251" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583211068514" />
-    <state width="1362" height="251" key="GridCell.Tab.0.right" timestamp="1583211068514">
+    <state width="1362" height="310" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.0.right" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="251" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583211068514" />
-    <state width="1362" height="313" key="GridCell.Tab.1.bottom" timestamp="1582534872119">
+    <state width="1362" height="310" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.1.bottom" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582534872119" />
-    <state width="1362" height="313" key="GridCell.Tab.1.center" timestamp="1582534872119">
+    <state width="1362" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.1.center" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="313" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582534872119" />
-    <state width="1362" height="313" key="GridCell.Tab.1.left" timestamp="1582534872119">
+    <state width="1362" height="310" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.1.left" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="313" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582534872119" />
-    <state width="1362" height="313" key="GridCell.Tab.1.right" timestamp="1582534872119">
+    <state width="1362" height="310" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
+    <state width="1362" height="310" key="GridCell.Tab.1.right" timestamp="1583818070728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="313" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582534872119" />
+    <state width="1362" height="310" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583818070728" />
     <state x="541" y="166" key="SettingsEditor" timestamp="1581932732663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,5 +250,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="981" y="246" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582272489338" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GMM.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
