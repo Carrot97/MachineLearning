@@ -11,7 +11,7 @@ class train_parameters:
         self.m = np.shape(dataMatIn)[0]                    # 数据矩阵行数
         self.alphas = np.mat(np.zeros((self.m, 1)))        # 根据矩阵行数初始化alpha参数为0
         self.b = 0                                         # 初始化b参数为0
-        self.eCache = np.mat(np.zeros((self.m, 2)))        # 根据矩阵行数初始化虎误差缓存，第一列为是否有效的标志位，第二列为实际的误差E的值
+        self.eCache = np.mat(np.zeros((self.m, 2)))        # 根据矩阵行数初始化误差缓存，第一列为是否有效的标志位，第二列为实际的误差E的值
 
 def load_dataset(fileName):
     dataMat = []
