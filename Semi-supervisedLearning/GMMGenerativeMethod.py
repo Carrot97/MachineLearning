@@ -1,74 +1,89 @@
 import numpy as np
 from scipy.stats import multivariate_normal
 
-def load_dataset(filename):
+class Param(object):  # 参数过多，定义结构体便于传参
+    def __init__(self, data, labels, labeledDataNum):
+        self.labeledData = np.mat(data[:50, :])
+        self.labels = labels
+        self.unlabeledData = np.mat(data[50:, :])
+        self.m, self.n = data.shape
+        self.l = labeledDataNum
+        self.u = self.m - self.l
+        self.k = len(list(set(self.labels.copy().tolist())))  # 获取数据类型数量,深拷贝后利用set去重
+        # 利用有标签数据进行初始化
+        self.mu = np.array(np.tile(np.sum(self.unlabeledData, axis=0)/self.u, (self.k, 1)))
+        self.cov = np.array([(self.unlabeledData - self.mu[0, :]).T * (self.unlabeledData - self.mu[0, :]) / self.u] * self.k)
+        self.alpha = np.array([1.0 / self.k] * self.k)
+        self.gamma = np.mat(np.zeros((self.u, self.k)))
+
+def loadDataSet(filename):
     """
     加载散点数据集
     :param filename: 文件名
     :return: 数据，标签
     """
-    dataset = np.loadtxt(filename)
-    data = dataset[:, :-1]
-    labels = dataset[:50, -1]  # 取前50行作为有标签数据
+    dataSet = np.loadtxt(filename)
+    data = dataSet[:, :-1]
+    labels = dataSet[:50, -1]  # 取前50行作为有标签数据
     return data, labels
 
-def get_label_num(train_labels):
-    """
-    获取数据类型数量
-    :param train_labels: 数据类型标签
-    :return: 数据类型数量
-    """
-    label_list = list(set(train_labels.copy().tolist()))  # 深拷贝后利用set去重
-    return len(label_list)
-
-def init(train_data):
-
-
 def phi(data, mu, cov):
+    """
+    获得指定的高斯分布
+    :param data: 数据
+    :param mu: 均值
+    :param cov: 方差
+    :return: 特定高斯分布对于数据data的输出
+    """
     norm = multivariate_normal(mean=mu, cov=cov)
     return norm.pdf(data)
 
-def get_expectation(data, mu, cov, alpha, k):
-    m = data.shape[0]
-    gamma = np.mat(np.zeros((m, k)))
-    prob = np.zeros((m, k))
-    for i in range(k):
-        prob[:, i] = phi(data, mu[i], cov[i])
+def getExpectation(pa):
+    """
+    E步（按公式编写）
+    :param pa: 训练参数
+    :return: 无
+    """
+    prob = np.zeros((pa.u, pa.k))
+    for i in range(pa.k):
+        prob[:, i] = phi(pa.unlabeledData, pa.mu[i], pa.cov[i])
     prob = np.mat(prob)
-    for i in range(k):
-        gamma[:, i] = alpha[i] * prob[:, i]
-    for i in range(m):
-        gamma[i, :] /= np.sum(gamma[i, :])
-    return gamma
+    for i in range(pa.k):
+        pa.gamma[:, i] = pa.alpha[i] * prob[:, i]
+    for i in range(pa.u):
+        pa.gamma[i, :] /= np.sum(pa.gamma[i, :])
 
-def maximize(data, gamma, k):
-    m, n = data.shape
-    mu = np.zeros((k, n))
-    cov = []
-    alpha = np.zeros(k)
-    for i in range(k):
-        Nk = np.sum(gamma[:, i])
-        for j in range(n):
-            mu[i, j] = np.sum(np.multiply(gamma[:, i], data[:, j])) / Nk
-        cov_i = np.mat(np.zeros((n, n)))
-        for j in range(m):
-            cov_i += gamma[j, i] * (data[j] - mu[i]).T * (data[j] - mu[i]) / Nk
-        cov.append(cov_i)
-        alpha[i] = Nk / m
-    return mu, np.array(cov), alpha
+def maximize(pa):
+    """
+    M步（按公式编写）
+    :param pa: 训练参数
+    :return: 无
+    """
+    pa.mu = np.zeros((pa.k, pa.n))
+    pa.cov = []
+    pa.alpha = np.zeros(pa.k)
+    for i in range(pa.k):
+        labeled_data_i = np.array([np.array(pa.labeledData)[d] for d in range(pa.l) if pa.labels[d] == i+1])
+        li = len(labeled_data_i)
+        Nk = np.sum(pa.gamma[:, i]) + li
+        for j in range(pa.n):
+            pa.mu[i, j] = (np.sum(np.multiply(pa.gamma[:, i], pa.unlabeledData[:, j])) + np.sum(labeled_data_i[:, j])) / Nk
+        cov_i = np.mat(np.zeros((pa.n, pa.n)))
+        for j in range(pa.u):
+            cov_i += pa.gamma[j, i] * (pa.unlabeledData[j] - pa.mu[i]).T * (pa.unlabeledData[j] - pa.mu[i])
+        for j in range(pa.l):
+            cov_i += (pa.labeledData[j] - pa.mu[i]).T * (pa.labeledData[j] - pa.mu[i])
+        pa.cov.append(cov_i / Nk)
+        pa.alpha[i] = Nk / pa.m
 
-def semi_GMM(train_data, train_labels, iter_times):
-    m, n = train_data.shape
-    l = len(train_labels)
-    u = m - l
-    k = get_label_num(train_labels)
-    mu, cov = init(train_data)
-    alpha = np.array([1.0 / k] * k)
-    for i in range(iter_times):
-        gamma = get_expectation(data, mu, cov, alpha, k)
-        mu, cov, alpha = maximize(data, gamma, k)
-    return mu, cov, alpha
+def semi_GMM(trainData, trainLabels, iterTimes):
+    pa = Param(trainData, trainLabels, 50)
+    for i in range(iterTimes):
+        getExpectation(pa)
+        maximize(pa)
+    return pa.mu, np.array(pa.cov), pa.alpha
 
 if __name__ == '__main__':
-    train_data, train_labels = load_dataset('scatter_with_label.txt')
-    mu, cov, alpha = semi_GMM(train_data, train_labels, 100)
+    trainData, trainLabels = loadDataSet('scatter_with_label.txt')
+    mu, cov, alpha = semi_GMM(trainData, trainLabels, 100)
+    print(mu, cov, alpha)
