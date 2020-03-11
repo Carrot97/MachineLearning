@@ -3,12 +3,12 @@ from scipy.stats import multivariate_normal
 
 class Param(object):  # 参数过多，定义结构体便于传参
     def __init__(self, data, labels, labeledDataNum):
-        self.labeledData = np.mat(data[:50, :])
-        self.labels = labels
-        self.unlabeledData = np.mat(data[50:, :])
         self.m, self.n = data.shape
         self.l = labeledDataNum
         self.u = self.m - self.l
+        self.labeledData = np.mat(data[:self.l, :])
+        self.labels = labels
+        self.unlabeledData = np.mat(data[self.l:, :])
         self.k = len(list(set(self.labels.copy().tolist())))  # 获取数据类型数量,深拷贝后利用set去重
         # 利用有标签数据进行初始化
         self.mu = np.array(np.tile(np.sum(self.unlabeledData, axis=0)/self.u, (self.k, 1)))
