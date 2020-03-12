@@ -116,8 +116,8 @@ def showClassifer(dataMat, w, b):
     x2 = min(dataMat)[0]
     a1, a2 = w
     b = float(b)
-    a1 = float(a1)
-    a2 = float(a2)
+    a1 = float(a1[0])
+    a2 = float(a2[0])
     y1, y2 = (-b - a1 * x1) / a2, (-b - a1 * x2) / a2
     plt.plot([x1, x2], [y1, y2])
     # 找出支持向量点
