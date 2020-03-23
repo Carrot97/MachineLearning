@@ -23,8 +23,7 @@ def k_means(data, k):
             labels[i] = np.argsort(dist)[0]
         for i in range(k):
             labels_i = np.array([data[j] for j in range(m) if labels[j] == i])
-            for j in range(n):
-                mu_update[i, :] = (np.sum(labels_i, axis=0, keepdims=True)) / len(labels_i)
+            mu_update[i, :] = (np.sum(labels_i, axis=0, keepdims=True)) / len(labels_i)
         if (mu == mu_update).all():
             count += 1
             if count == 3:
