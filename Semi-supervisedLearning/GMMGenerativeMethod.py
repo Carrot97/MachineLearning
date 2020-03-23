@@ -9,7 +9,7 @@ class Param(object):  # 参数过多，定义结构体便于传参
         self.labeledData = np.mat(data[:self.l, :])
         self.labels = labels
         self.unlabeledData = np.mat(data[self.l:, :])
-        self.k = len(list(set(self.labels.copy().tolist())))  # 获取数据类型数量,深拷贝后利用set去重
+        self.k = len(np.unique(labels))  # 获得标签总个数
         # 利用有标签数据进行初始化
         self.mu = np.array(np.tile(np.sum(self.unlabeledData, axis=0)/self.u, (self.k, 1)))
         self.cov = np.array([(self.unlabeledData - self.mu[0, :]).T * (self.unlabeledData - self.mu[0, :]) / self.u] * self.k)
