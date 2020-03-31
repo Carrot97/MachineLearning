@@ -50,19 +50,19 @@ class QParam:
 
 def update():
     for e in range(para.epoch):
-        state = env.reset()  # 初始化
+        state = maze.reset()  # 初始化
         while True:
-            env.fresh()                                  # 刷新环境（相当于显示）
-            action = para.chooseAction(str(state))       # 基于策略选择一个行动
-            newState, reward, isDone = env.step(action)  # 获得新棋盘状态，奖励和游戏是否结束
+            maze.fresh()                                  # 刷新环境（相当于显示）
+            action = para.chooseAction(str(state))        # 基于策略选择一个行动
+            newState, reward, isDone = maze.step(action)  # 获得新棋盘状态，奖励和游戏是否结束
             para.learn(str(state), str(newState), action, reward)  # 以字符串形式传递与tkinter有关，暂时还没了解
             if isDone:
                 break
             state = newState
-    env.destory()
+    maze.destory()
 
 if __name__ == "__main__":
-    env = Maze()  # 建立迷宫环境
-    para = QParam(actions=list(range(env.n_actions)))  # 初始化QL参数缺省值参数采用默认值
-    env.after(para.epoch, update)  # 循环100次
-    env.mainloop()
+    maze = Maze()  # 建立迷宫环境
+    para = QParam(actions=list(range(maze.n_actions)))  # 初始化QL参数缺省值参数采用默认值
+    maze.after(para.epoch, update)  # 循环100次
+    maze.mainloop()
