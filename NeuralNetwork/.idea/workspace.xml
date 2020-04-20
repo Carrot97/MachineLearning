@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e940326-8500-44c3-b9c2-e75a9a83b19e" name="Default Changelist" comment="" />
+    <list default="true" id="2e940326-8500-44c3-b9c2-e75a9a83b19e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Clustering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Clustering/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Ts8QXOCwKWiba87gxOi8UqJqYW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,7 +39,7 @@
       <recent name="C:\Users\KakaRoot\PycharmProjects\tensorflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DecisionTree">
+  <component name="RunManager" selected="Python.Autoencoder">
     <configuration name="Autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,9 +168,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Autoencoder" />
         <item itemvalue="Python.DecisionTree" />
         <item itemvalue="Python.C1" />
-        <item itemvalue="Python.Autoencoder" />
         <item itemvalue="Python.conference" />
         <item itemvalue="Python.RNN-sin" />
       </list>
@@ -200,22 +206,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580528319426" />
-    <state width="1362" height="119" key="GridCell.Tab.0.bottom" timestamp="1580528358620">
+    <state width="1362" height="119" key="GridCell.Tab.0.bottom" timestamp="1586326337458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580528358620" />
-    <state width="1362" height="119" key="GridCell.Tab.0.center" timestamp="1580528358620">
+    <state width="1362" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586326337458" />
+    <state width="1362" height="119" key="GridCell.Tab.0.center" timestamp="1586326337458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="119" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580528358620" />
-    <state width="1362" height="119" key="GridCell.Tab.0.left" timestamp="1580528358620">
+    <state width="1362" height="119" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586326337458" />
+    <state width="1362" height="119" key="GridCell.Tab.0.left" timestamp="1586326337458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="119" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580528358620" />
-    <state width="1362" height="119" key="GridCell.Tab.0.right" timestamp="1580528358620">
+    <state width="1362" height="119" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586326337458" />
+    <state width="1362" height="119" key="GridCell.Tab.0.right" timestamp="1586326337458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="119" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580528358620" />
+    <state width="1362" height="119" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586326337458" />
     <state x="461" y="195" key="SettingsEditor" timestamp="1578623514903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

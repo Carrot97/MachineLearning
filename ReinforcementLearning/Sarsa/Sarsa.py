@@ -29,14 +29,14 @@ class QParam:
             action = np.random.choice(stateAction[stateAction == np.max(stateAction)].index)  # 大于e时随机选取一个Q值最大的动作
         return action
 
-    def learn(self, state, newState, action, reward):
+    def learn(self, state, newState, action, newAction, reward):
         """
         按照公式更新Q表
         """
         self.checkState(newState)
         QPredict = self.QTable.loc[state, action]
         if newState != 'terminal':
-            QReal = reward + self.gamma * self.QTable.loc[newState, :].max()
+            QReal = reward + self.gamma * self.QTable.loc[newState, newAction]
         else:
             QReal = reward
         self.QTable.loc[state, action] += self.lr * (QReal - QPredict)
@@ -51,14 +51,16 @@ class QParam:
 def update():
     for e in range(para.epoch):
         state = maze.reset()  # 初始化
+        action = para.chooseAction(str(state))
         while True:
-            maze.fresh()                                  # 刷新环境（相当于显示）
-            action = para.chooseAction(str(state))        # 基于策略选择一个行动
-            newState, reward, isDone = maze.step(action)  # 获得新棋盘状态，奖励和游戏是否结束
-            para.learn(str(state), str(newState), action, reward)  # 以字符串形式传递与tkinter有关，暂时还没了解
+            maze.fresh()                                     # 刷新环境（相当于显示）
+            newState, reward, isDone = maze.step(action)     # 获得新棋盘状态，奖励和游戏是否结束
+            newAction = para.chooseAction(str(newState))        # 基于策略选择一个行动
+            para.learn(str(state), str(newState), action, newAction, reward)  # 以字符串形式传递与tkinter有关，暂时还没了解
             if isDone:
                 break
             state = newState
+            action = newAction
     maze.destory()
 
 if __name__ == "__main__":
