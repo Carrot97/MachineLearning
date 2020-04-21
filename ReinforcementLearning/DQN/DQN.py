@@ -1,6 +1,5 @@
 from Maze import Maze
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
@@ -18,11 +17,11 @@ class QParam:
                  learningRate=0.01,
                  rewardDecay=0.9,
                  eGreedy=0.1,
-                 epoch=100,
+                 epoch=300,
                  learnStepNum=5,
                  batchSize=32,
-                 memoryCapacity=500,
-                 repleaceStepNum=200
+                 memoryCapacity=2000,
+                 repleaceStepNum=200,
                  ):
         # 常量
         self.actions = actions
@@ -31,10 +30,10 @@ class QParam:
         self.epsilon = eGreedy
         self.epoch = epoch
         self.lr = learningRate      # 神经网络学习率
-        self.lsn = learnStepNum     # 每隔多少步real net学习一次
-        self.bs = batchSize         # 神经网络real net训练的batch size
+        self.lsn = learnStepNum     # 每隔多少步main net学习一次
+        self.bs = batchSize         # 神经网络main net训练的batch size
         self.mc = memoryCapacity    # 离线数据容量
-        self.rsn = repleaceStepNum  # 每隔多少步更新一次predict net的参数
+        self.rsn = repleaceStepNum  # 每隔多少步更新一次old net的参数
 
         # 变量
         self.memory = np.zeros((self.mc, self.features*2+2))  # 缓存（每行为state, action, reward, newState）
@@ -46,7 +45,7 @@ class QParam:
 
         oldPara = tf.get_collection('old net parameters')
         newPara = tf.get_collection('main net parameters')
-        self.replacePara = [tf.assign(p, r) for p, r in zip(oldPara, newPara)]  # 将real net的参数复制给predict net
+        self.replacePara = [tf.assign(o, n) for o, n in zip(oldPara, newPara)]  # 将real net的参数复制给predict net
 
         self.sess = tf.Session()
         self.sess.run(tf.global_variables_initializer())  # 神经网络变量初始化
@@ -70,7 +69,7 @@ class QParam:
                 w2 = tf.get_variable('w2', [unitNum, self.actions], initializer=wInit, collections=cNames)
                 b2 = tf.get_variable('b2', [1, self.actions], initializer=bInit, collections=cNames)
                 self.Qpredict = tf.matmul(l1, w2) + b2
-            
+
         with tf.variable_scope('loss'):
             self.loss = tf.reduce_mean(tf.squared_difference(self.t, self.Qpredict))
         with tf.variable_scope('train'):
@@ -84,7 +83,7 @@ class QParam:
             with tf.variable_scope('layer1'):
                 w1 = tf.get_variable('w1', [self.features, unitNum], initializer=wInit, collections=cNames)
                 b1 = tf.get_variable('b1', [1, unitNum], initializer=bInit, collections=cNames)
-                l1 = tf.nn.relu(tf.matmul(self.s, w1) + b1)
+                l1 = tf.nn.relu(tf.matmul(self.ns, w1) + b1)
 
             with tf.variable_scope('layer2'):
                 w2 = tf.get_variable('w2', [unitNum, self.actions], initializer=wInit, collections=cNames)
@@ -94,29 +93,29 @@ class QParam:
     def chooseAction(self, state):
         state = state[np.newaxis, :]  # 适应神经网络输入
         if np.random.uniform() < self.epsilon:       # epsilon贪婪
-            action = np.random.choice(self.actions)  # 小于e时随机选取一个动作
+            action = np.random.randint(0, self.actions)  # 小于e时随机选取一个动作
         else:
             stateAction = self.sess.run(self.Qpredict, feed_dict={self.s: state})
             action = np.argmax(stateAction)  # 大于e时选取Q值最大的动作
         return action
 
-    def getInMemory(self, state, newState, action, reward):
+    def getInMemory(self, state, action, reward, newState):
         if not hasattr(self, 'memoryCounter'):  # 若当前类中无该变量则创建
-            self.memoryCouner = 0
+            self.memoryCounter = 0
         row = np.hstack((state, [action, reward], newState))  # 建立行向量
-        index = self.memoryCouner % self.mc  # 超出缓存容量后覆盖最前面的行
+        index = self.memoryCounter % self.mc  # 超出缓存容量后覆盖最前面的行
         self.memory[index, :] = row
-        self.memoryCouner += 1
+        self.memoryCounter += 1
 
     def learn(self):
         if self.learnStep % self.rsn == 0:
             self.sess.run(self.replacePara)
 
         # 从缓存中抽取部分行向量学习
-        if self.memoryCouner > self.bs:
+        if self.memoryCounter > self.mc:
             index = np.random.choice(self.mc, size=self.bs)
         else:
-            index = np.random.choice(self.memoryCouner, size=self.bs)
+            index = np.random.choice(self.memoryCounter, size=self.bs)
         batchMemory = self.memory[index, :]
 
         QnextStatePredict, Qpredict = self.sess.run([self.QnextStatePredict, self.Qpredict],
@@ -147,18 +146,18 @@ def update():
             maze.fresh()                                           # 刷新环境（相当于显示）
             action = para.chooseAction(state)                 # 基于策略选择一个行动
             newState, reward, isDone = maze.step(action)           # 获得新棋盘状态，奖励和游戏是否结束
-            para.getInMemory(state, newState, action, reward)      # 将过程存入缓存以便离线学习
+            para.getInMemory(state, action, reward, newState)      # 将过程存入缓存以便离线学习
             if stepCounter > 200 and stepCounter % para.lsn == 0:  # 每隔几步学习以此，抵消参数间的相关性
                 para.learn()
             if isDone:
                 break
             state = newState
             stepCounter += 1
-    maze.destory()
+    maze.destroy()
 
 if __name__ == "__main__":
     maze = Maze()  # 建立迷宫环境
     para = QParam(maze.n_actions, maze.n_features)  # 初始化QL参数缺省值参数采用默认值
-    maze.after(para.epoch, update)  # 循环100次
+    maze.after(100, update)  # 循环100次
     maze.mainloop()
     para.showCost()
