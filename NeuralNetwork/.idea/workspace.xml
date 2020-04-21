@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e940326-8500-44c3-b9c2-e75a9a83b19e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tensorflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tensorflow.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Autoencoder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RNN-sin.py" beforeDir="false" afterPath="$PROJECT_DIR$/RNN-sin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
       <recent name="C:\Users\KakaRoot\PycharmProjects\tensorflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RNN-sin">
+  <component name="RunManager" selected="Python.Autoencoder">
     <configuration name="Autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RNN-sin" />
         <item itemvalue="Python.Autoencoder" />
+        <item itemvalue="Python.RNN-sin" />
         <item itemvalue="Python.DecisionTree" />
         <item itemvalue="Python.C1" />
         <item itemvalue="Python.conference" />
@@ -202,33 +201,49 @@
       <option name="presentableId" value="Default" />
       <updated>1574237426349</updated>
     </task>
+    <task id="LOCAL-00001" summary="update tensorflow 2.1">
+      <created>1587442720142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587442720142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update tensorflow 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tensorflow 2.1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="554" y="106" key="CommitChangelistDialog2" timestamp="1587442719005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="554" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587442719005" />
     <state x="743" y="273" key="FileChooserDialogImpl" timestamp="1580528319426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580528319426" />
-    <state width="1278" height="262" key="GridCell.Tab.0.bottom" timestamp="1587442387051">
+    <state width="1278" height="262" key="GridCell.Tab.0.bottom" timestamp="1587442971652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="841" height="506" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587378708709" />
-    <state width="1278" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587442387051" />
-    <state width="1278" height="262" key="GridCell.Tab.0.center" timestamp="1587442387051">
+    <state width="1278" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587442971652" />
+    <state width="1278" height="262" key="GridCell.Tab.0.center" timestamp="1587442971652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="841" height="506" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587378708709" />
-    <state width="1278" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587442387051" />
-    <state width="1278" height="262" key="GridCell.Tab.0.left" timestamp="1587442387051">
+    <state width="1278" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587442971652" />
+    <state width="1278" height="262" key="GridCell.Tab.0.left" timestamp="1587442971652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="841" height="506" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587378708708" />
-    <state width="1278" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587442387051" />
-    <state width="1278" height="262" key="GridCell.Tab.0.right" timestamp="1587442387051">
+    <state width="1278" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587442971652" />
+    <state width="1278" height="262" key="GridCell.Tab.0.right" timestamp="1587442971652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="841" height="506" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587378708709" />
-    <state width="1278" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587442387051" />
+    <state width="1278" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587442971652" />
     <state x="755" y="208" key="SettingsEditor" timestamp="1587442040461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

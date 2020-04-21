@@ -1,9 +1,9 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import time
 import numpy as np
 import matplotlib.pyplot as plt
 
-tf.compat.v1.disable_v2_behavior()
+tf.disable_v2_behavior()
 
 # 1 parameters
 TRAINING_NUM = 20000
