@@ -1,8 +1,7 @@
 import gym
 from PolicyGradient import Params
-import matplotlib.pyplot as plt
 
-DISPLAY_REWARD_THRESHOLD = 150  # 设置刷新阈值，当reward大于150时开始刷新
+DISPLAY_REWARD_THRESHOLD = 100  # 设置刷新阈值，当reward大于150时开始刷新
 RENDER = False
 
 env = gym.make('CartPole-v0')  # 立杆子游戏
